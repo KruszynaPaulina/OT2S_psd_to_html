@@ -18,9 +18,9 @@
 
 .header__navigation {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	padding-top: 34px;
-	align-items: center;
 }
 
 .nav__list {
@@ -485,3 +485,104 @@
 .care__article--problem {
 	margin-top: 56px;
 }
+
+/* Footer */ 
+
+.footer {
+	width: 100%;
+	height: 232px;
+	background-color: $fontColor;
+	padding-top: 78px;
+}
+
+.footer__container {
+	border: 1px solid red;
+	display: flex;
+	height: 63px;
+}
+
+.footer__cell--copyright {
+	width: 25%;
+}
+
+.footer__cell {
+	color: $white;
+}
+
+.footer__article {
+	font-size: 14px;
+	line-height: 30px;
+	font-family: $font;
+	font-weight: 300;
+}
+
+.footer__logo {
+	margin-top: 8px;
+}
+
+.footer__link {
+	color: $white;
+}
+
+.footer__article--design{
+	width: 200px;
+	background-image: url('../images/logo_footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.footer__cell--navigation {
+	width: 50%;
+}
+
+.navigation__list {
+	display: flex;
+	justify-content: center;
+	line-height: 63px;
+}
+
+.navigation__link {
+	color: $white;
+	font-size: 18px;
+	font-family: $font;
+	font-family: 600;
+}
+
+.navigation__link:hover {
+	text-decoration: underline;
+}
+
+.navigation__item {
+	margin: 0 23px;
+}
+
+.footer__cell--contact {
+	width: 25%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.contact__article {
+	font-size: 14px;
+	font-family: $font2;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.contact__article--phone {
+	width: 112px;
+	text-align: right;
+	background-image: url('../images/phone_footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.contact__article--email {
+	width: 142px;
+	text-align: right;
+	background-image: url('../images/meil_footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+

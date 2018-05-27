@@ -85,11 +85,11 @@ html, body {
 .header__navigation {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding-top: 34px;
-  -ms-flex-align: center;
-      align-items: center; }
+  padding-top: 34px; }
 
 .nav__list {
   display: -ms-flexbox;
@@ -491,6 +491,94 @@ html, body {
 
 .care__article--problem {
   margin-top: 56px; }
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 232px;
+  background-color: #0a0907;
+  padding-top: 78px; }
+
+.footer__container {
+  border: 1px solid red;
+  display: -ms-flexbox;
+  display: flex;
+  height: 63px; }
+
+.footer__cell--copyright {
+  width: 25%; }
+
+.footer__cell {
+  color: #ffffff; }
+
+.footer__article {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300; }
+
+.footer__logo {
+  margin-top: 8px; }
+
+.footer__link {
+  color: #ffffff; }
+
+.footer__article--design {
+  width: 200px;
+  background-image: url("../images/logo_footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center right; }
+
+.footer__cell--navigation {
+  width: 50%; }
+
+.navigation__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 63px; }
+
+.navigation__link {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-family: 600; }
+
+.navigation__link:hover {
+  text-decoration: underline; }
+
+.navigation__item {
+  margin: 0 23px; }
+
+.footer__cell--contact {
+  width: 25%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.contact__article {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px; }
+
+.contact__article--phone {
+  width: 112px;
+  text-align: right;
+  background-image: url("../images/phone_footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center left; }
+
+.contact__article--email {
+  width: 142px;
+  text-align: right;
+  background-image: url("../images/meil_footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center left; }
 
 /* RWD */
 /* Large devices (desktops, 992px and less than 1200px) */
