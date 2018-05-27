@@ -275,4 +275,134 @@
 .date {
 	height: 864px;
 	width: 100%;
+	display: flex;
+}
+
+.date__cell {
+	border: 1px solid red;
+}
+
+.date__cell--one {
+	width: 25%;
+	background-image: url('../images/line_data.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.date__cell--two {
+	width: 25%;
+	background-color: #424242;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.date__cell--three {
+	width: 50%;
+	background-color: $white;
+}
+
+.date__number {
+	color: $white;
+	margin-bottom: 46px;
+}
+
+.date__line {
+	background-color: $white;
+}
+
+.date__link {
+	color: $white;
+	left: -38px;
+	bottom: -70px;
+}
+
+.date__side {
+	position: relative;
+	left: 175px;
+	top: 165px;
+}
+
+.data__content {
+	text-align: center;
+}
+
+.two__numer {
+	color: $white;
+	font-size: 271.25px;
+	font-weight: 700;
+	font-family: $font;
+}
+
+.two__time {
+	color: $white;
+	font-size: 24px;
+	font-family: $font;
+	font-weight: 500;
+	margin-top: 31px;
+}
+
+.two__article {
+	color: $white;
+	font-size: 36px;
+	font-family: $font;
+	font-weight: 500;
+	line-height: 60px;
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+
+.tree__row {
+	display: flex;
+	height: 50%;
+}
+
+.tree__cell {
+	border-top: 1px solid #000000;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tree__content {
+	text-align: center;
+}
+
+.tree__cell--one {
+	border-right: 1px solid #000000;
+}
+
+.tree__cell--three {
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+
+.tree__cell--four {
+	border-bottom: 1px solid #000000;
+	background-color: #424242;
+	color: $white;
+}
+
+.tree__numer {
+	font-size: 91.61px;
+	font-family: $font;
+	font-weight: 500;
+}
+
+.tree__time {
+	font-size: 17.36px;
+	font-family: $font;
+	font-weight: 500;
+	margin-top: 41px;
+}
+
+.tree__article {
+	font-size: 28.93px;
+	font-family: $font;
+	font-weight: 500;
+	line-height: 46.29px;
+	width: 210px;
+	margin-top: 10px;
 }
