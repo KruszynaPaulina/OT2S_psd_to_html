@@ -426,6 +426,72 @@ html, body {
   width: 210px;
   margin-top: 10px; }
 
+/* Care */
+.care {
+  width: 100%;
+  background-color: #ffffff;
+  height: 809px;
+  background-image: url("../images/line_care.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -ms-flexbox;
+  display: flex; }
+
+.care__cell {
+  border: 1px solid red; }
+
+.care__cell--one {
+  width: 25%; }
+
+.care__cell--two {
+  width: 75%; }
+
+.care__side {
+  position: relative;
+  top: 120px;
+  left: 175px; }
+
+.care__title {
+  color: #27251f; }
+
+.care__number {
+  margin-bottom: 46px; }
+
+.care__line {
+  height: 402px; }
+
+.care__cell--two {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.care__conntent {
+  margin: 0 175px; }
+
+.care__title {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+.care__title--firm {
+  font-weight: 700;
+  margin-bottom: 0px; }
+
+.care__article {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px; }
+
+.care__strong {
+  font-weight: 700;
+  border: 1px solid #27251f;
+  padding: 2px 8px; }
+
+.care__article--problem {
+  margin-top: 56px; }
+
 /* RWD */
 /* Large devices (desktops, 992px and less than 1200px) */
 /* Hover */
