@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>OT2S</title>
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800|Roboto:500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -12,10 +13,12 @@
 		<header class="header">
 			<div class="header__container container">
 				<div class="header__navigation">
-					<a href="index.html">
-						<img src="./images/logo_nav.jpg" alt="Logo OT2S">
-					</a>
-					<nav>
+					<div class="navigation__logo">
+						<a href="index.html">
+							<img src="./images/logo_nav.jpg" alt="Logo OT2S">
+						</a>
+					</div>
+					<nav class="navigation__nav">
 						<ul class="nav__list">
 							<li class="nav__item nav__item--about"><a href="#" class="nav__link">O firmie</a></li>
 							<li class="nav__item nav__item--out"><a href="#" class="nav__link">Outsourcing IT</a></li>
@@ -24,7 +27,12 @@
 							<li class="nav__item nav__item--contact"><a href="#" class="nav__link">Kontakt</a></li>
 						</ul>
 					</nav>
-					<p class="nav__phone">12 560 780 456</p>
+					<div class="navigation__phone">
+						<p class="phone__article">12 560 780 456</p>
+					</div>
+					<div class="navigation__menu">
+						<i class="fas fa-bars"></i>
+					</div>
 				</div>
 				<div class="header__hero">
 					<div class="hero__image">
@@ -190,9 +198,7 @@
 		<footer>
 		</footer>
 
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    	crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

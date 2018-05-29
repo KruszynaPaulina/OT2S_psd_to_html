@@ -76,7 +76,7 @@ html, body {
   background-color: #ffffff;
   background-image: url("../images/line_header.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: left bottom;
   padding: 0 145px; }
 
 .header__container {
@@ -123,7 +123,7 @@ html, body {
 .nav__item--contact {
   width: 67px; }
 
-.nav__phone {
+.phone__article {
   color: #0a0907;
   width: 172px;
   font-size: 18px;
@@ -132,6 +132,9 @@ html, body {
   background-image: url("../images/phone_nav.jpg");
   background-repeat: no-repeat;
   line-height: 25px; }
+
+.navigation__menu {
+  display: none; }
 
 .header__hero {
   position: absolute;
@@ -152,14 +155,15 @@ html, body {
 .header__side {
   position: relative;
   left: 0;
-  bottom: -261px; }
+  top: 45%;
+  transform: translateY(-50%); }
 
 .side__number {
   font-size: 24px;
   color: #27251f;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  margin-bottom: 290px; }
+  margin-bottom: 15%; }
 
 .side__line {
   width: 1px;
@@ -581,10 +585,90 @@ html, body {
   background-position: center left; }
 
 /* RWD */
+@media (max-width: 1600px) {
+  .side__number {
+    margin-bottom: 10%; }
+
+  .header__side {
+    top: 40%; } }
+@media (max-width: 1400px) {
+  .header {
+    padding: 0 80px; }
+
+  .nav__link {
+    font-size: 16px; }
+
+  .nav__item {
+    margin: 0 16px; } }
 /* Large devices (desktops, 992px and less than 1200px) */
+@media (max-width: 1200px) {
+  .header {
+    background-image: none;
+    padding: 0; }
+
+  .phone__article {
+    width: 145px;
+    font-size: 16px; }
+
+  .nav__item {
+    margin: 0 12px; } }
 /* Hover */
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
+  .navigation__nav {
+    -ms-flex-order: 4;
+        order: 4;
+    width: 100%;
+    display: none; }
+
+  .header {
+    position: relative; }
+
+  .navigation__menu {
+    display: block;
+    -ms-flex-order: 3;
+        order: 3; }
+
+  .nav__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 114px);
+    top: 114px;
+    z-index: 2; }
+
+  .nav__link {
+    color: #ffffff; }
+
+  .header__navigation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .navigation__logo, .navigation__phone, .navigation__menu {
+    margin-bottom: 34px; }
+
+  .navigation__menu {
+    margin-left: 30px;
+    font-size: 28px;
+    cursor: pointer; }
+
+  /* Click */
+  .click .container {
+    padding: 0; }
+
+  .click .navigation__nav {
+    display: block; }
+
+  .click .navigation__logo {
+    margin-left: 30px; }
+
+  .click .navigation__menu {
+    margin-right: 30px; }
+
   /* Focus */ }
 /* Small devices (landscape phones, 576px and less than 768) */
 /* Extra small devices (portrait phones, less than 576px) */

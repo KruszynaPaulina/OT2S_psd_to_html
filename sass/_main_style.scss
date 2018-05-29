@@ -8,7 +8,7 @@
 	background-color: $white;
 	background-image: url('../images/line_header.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-position: left bottom;
 	padding: 0 145px;
 }
 
@@ -63,7 +63,7 @@
 	width: 67px;
 }
 
-.nav__phone {
+.phone__article {
 	color: $fontColor;
 	width: 172px;
 	font-size: 18px;
@@ -72,6 +72,10 @@
 	background-image: url('../images/phone_nav.jpg');
 	background-repeat: no-repeat;
 	line-height: 25px;
+}
+
+.navigation__menu{
+	display: none;
 }
 
 .header__hero {
@@ -95,7 +99,8 @@
 .header__side {
 	position: relative;
 	left: 0;
-	bottom: -261px;
+	top: 45%;
+	transform: translateY(-50%);
 }
 
 .side__number {
@@ -103,7 +108,7 @@
 	color: $fontColor2;
 	font-family: $font;
 	font-weight: 400;
-	margin-bottom: 290px;
+	margin-bottom: 15%;
 }
 
 .side__line {
@@ -585,4 +590,5 @@
 	background-repeat: no-repeat;
 	background-position: center left;
 }
+
 

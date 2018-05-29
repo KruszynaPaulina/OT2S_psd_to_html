@@ -1,7 +1,51 @@
 /* RWD */
 
+
+@media (max-width: 1600px) {
+
+	.side__number {
+    	margin-bottom: 10%;
+	}
+
+	.header__side {
+		top: 40%;
+	}	
+
+
+}
+
+@media (max-width: 1400px) {
+
+	.header {
+	    padding: 0 80px;
+	}
+
+	.nav__link {
+    	font-size: 16px;
+	}
+
+	.nav__item {
+    	margin: 0 16px;
+	}
+
+}
+
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
+	
+	.header {
+		background-image: none;
+		padding: 0;
+	}
+
+	.phone__article {
+    	width: 145px;
+    	font-size: 16px;
+	}
+
+	.nav__item {
+   	 	margin: 0 12px;
+	}
 
 }
 
@@ -13,6 +57,68 @@
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
 
+	.navigation__nav {
+		order:4;
+		width: 100%;
+		display: none;
+	}
+
+	.header {
+		position: relative;
+	}
+
+	.navigation__menu {
+		display: block;
+		order: 3;
+	}
+
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+		background-color: #000000;
+		position: absolute;
+		width: 100%;
+		height: calc(100% - 114px);
+		top: 114px;
+		z-index: 2;
+	}
+
+	.nav__link {
+		color: #ffffff;
+	}
+
+	.header__navigation {
+		flex-wrap: wrap;
+	}
+
+	.navigation__logo, .navigation__phone, .navigation__menu{
+		margin-bottom: 34px; 
+
+	}
+
+	.navigation__menu {
+		margin-left: 30px;
+		font-size: 28px;
+		cursor: pointer;
+	}
+
+	/* Click */ 
+
+	.click .container {
+		padding: 0;
+	}
+
+	.click .navigation__nav {
+		display: block;
+	}
+
+	.click .navigation__logo {
+		margin-left: 30px;
+	}
+
+	.click .navigation__menu {
+		margin-right: 30px;
+	}
 
 /* Focus */ 
 
