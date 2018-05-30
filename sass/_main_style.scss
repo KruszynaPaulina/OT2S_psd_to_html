@@ -230,15 +230,11 @@
 /* About */
 
 .about {
-	height: 865px;
+	max-height: 865px;
 	width: 100%;
 	background-color: #f7f7f7;
 	display: flex;
 	flex-direction: row;
-}
-
-.about__cell {
-	border: 1px solid red;
 }
 
 .about__cell--one {
@@ -246,6 +242,7 @@
 	background-image: url('../images/line_about.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	height: 865px;
 }
 
 .about__cell--two {
@@ -276,7 +273,7 @@
 .about__article {
 	font-size: 24px;
 	line-height: 36px;
-	width: 860px;
+	max-width: 860px;
 	margin: 0 175px;
 	font-family: $font;
 	font-weight: 400;
