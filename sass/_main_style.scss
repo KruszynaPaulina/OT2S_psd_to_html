@@ -134,6 +134,10 @@
 	left: -31px;
 }
 
+.side__link:hover {
+	font-weight: 800;
+}
+
 /* Services */ 
 
 .services {
@@ -426,19 +430,16 @@
 .care {
 	width: 100%;
 	background-color: $white;
-	height: 809px;
+	min-height: 809px;
 	background-image: url('../images/line_care.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: flex;
 }
 
-.care__cell{
-	border: 1px solid red;
-}
-
 .care__cell--one {
 	width: 25%;
+	height: 809px;
 }
 
 .care__cell--two {
@@ -472,13 +473,13 @@
 	margin: 0 175px;
 }
 
-.care__title {
+.care__subtitle {
 	font-size: 36px;
 	font-family: $font;
 	font-weight: 400;
 }
 
-.care__title--firm {
+.care__subtitle--firm {
 	font-weight: 700;
 	margin-bottom: 0px;
 }
@@ -510,7 +511,6 @@
 }
 
 .footer__container {
-	border: 1px solid red;
 	display: flex;
 	height: 63px;
 }
