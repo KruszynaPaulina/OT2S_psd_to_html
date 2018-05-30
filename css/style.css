@@ -315,14 +315,17 @@ html, body {
 .about__strong {
   font-weight: 700; }
 
+/* Date */
 .date {
   height: 864px;
   width: 100%;
   display: -ms-flexbox;
   display: flex; }
 
-.date__cell {
-  border: 1px solid red; }
+.date__box {
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%; }
 
 .date__cell--one {
   width: 25%;
@@ -331,7 +334,7 @@ html, body {
   background-size: contain; }
 
 .date__cell--two {
-  width: 25%;
+  width: 33.3%;
   background-color: #424242;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +344,7 @@ html, body {
       justify-content: center; }
 
 .date__cell--three {
-  width: 50%;
+  width: 66.6%;
   background-color: #ffffff; }
 
 .date__number {
@@ -607,7 +610,7 @@ html, body {
     font-size: 50px; }
 
   /* Services, About */
-  .services__side, .about__side {
+  .services__side, .about__side, .date__side {
     left: 110px; }
 
   .about__article br {
@@ -624,16 +627,16 @@ html, body {
   .services__subtitle {
     font-size: 30px; }
 
-  /* Services, About */
-  .services__cell--one, .about__cell--one {
-    background-image: none; }
-
-  .services__side, .about__side {
-    left: 30px; }
-
   .services__subtitle {
     margin-left: 30px;
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .services__title {
+    font-size: 40px; }
+
+  /* Date */
+  .two__numer {
+    font-size: 220px; } }
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
   /* Header */
@@ -646,7 +649,29 @@ html, body {
     font-size: 16px; }
 
   .nav__item {
-    margin: 0 12px; } }
+    margin: 0 12px; }
+
+  /* Services, About, Date */
+  .services__cell--one, .about__cell--one, .date__cell {
+    background-image: none; }
+
+  .services__side, .about__side, .date__side {
+    left: 30px; }
+
+  /* Services */
+  .services__title {
+    font-size: 50px; }
+
+  /* Date */
+  .two__numer {
+    font-size: 200px; }
+
+  .two__article {
+    font-size: 30px;
+    line-height: 50px; }
+
+  .date__cell--one {
+    min-width: 250px; } }
 /* Hover */
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
@@ -729,12 +754,48 @@ html, body {
   .services__cell--one {
     width: 40%; }
 
+  .date__cell--three {
+    width: 100%; }
+
   /* About */
   .about__article {
     margin: 0 50px; }
 
   .about__cell--one {
     min-width: 230px; }
+
+  /* Date */
+  .date__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .date__cell--two {
+    width: 100%; }
+
+  .two__numer {
+    font-size: 160px; }
+
+  .two__time {
+    font-size: 20px;
+    margin-top: 10px; }
+
+  .two__article {
+    font-size: 26px;
+    line-height: 30px; }
+
+  .tree__numer {
+    font-size: 70px; }
+
+  .tree__time {
+    font-size: 15px;
+    margin-top: 20px; }
+
+  .tree__article {
+    font-size: 22px;
+    line-height: 27px; }
+
+  .tree__cell--two, .tree__cell--four {
+    border-right: 1px solid #000000; }
 
   /* Focus */ }
 /* Small devices (landscape phones, 576px and less than 768) */
@@ -746,7 +807,33 @@ html, body {
   /* About */
   .about__article {
     margin: 0 30px;
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  /* Date */
+  .two__numer {
+    font-size: 130px; }
+
+  .two__time {
+    font-size: 16px;
+    margin-top: 6px; }
+
+  .two__article {
+    font-size: 23px;
+    line-height: 30px; }
+
+  .tree__numer {
+    font-size: 50px; }
+
+  .tree__time {
+    font-size: 14px;
+    margin-top: 10px; }
+
+  .tree__article {
+    font-size: 18px;
+    line-height: 20px; }
+
+  .tree__article {
+    width: 125px; } }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   /* Header */
@@ -762,7 +849,41 @@ html, body {
     font-size: 18px; }
 
   .about__cell--one {
-    min-width: 205px; } }
+    min-width: 205px; }
+
+  /* Date */
+  .date__cell--one {
+    min-width: 220px; }
+
+  .tree__article {
+    font-size: 15px; }
+
+  .date__cell--two {
+    height: 20%; }
+
+  .date__cell--three {
+    height: 80%; }
+
+  .tree__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .tree__cell {
+    width: 100%; }
+
+  .two__numer {
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500; }
+
+  .two__time {
+    font-size: 14px;
+    margin-top: 10px; }
+
+  .two__article {
+    font-size: 15px;
+    line-height: 20px;
+    width: 125px; } }
 @media (max-width: 450px) {
   /* Header */
   .hero__title {
@@ -841,4 +962,31 @@ html, body {
     min-height: 500px; }
 
   .about__article {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+
+  /* Date */
+  .date {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .date__cell--one {
+    width: 100%;
+    min-height: 212px;
+    height: 20%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+
+  .date__side {
+    position: static;
+    text-align: center; }
+
+  .date__box {
+    width: 100%;
+    height: 80%; }
+
+  .date {
+    height: 1060px; } }
