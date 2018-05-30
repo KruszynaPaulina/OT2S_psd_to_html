@@ -1,20 +1,17 @@
 var navMenu = $('.navigation__menu');
-var nav = $('.navigation__nav');
-var navList = $('.nav__list');
 var isClick = "unclick";
-var navLogo = $('.navigation__logo');
 var header = $('.header');
-
+var fas = $('.navigation__fas');
 
 navMenu.on('click', function(event) {
     if (isClick === "unclick") {
     	isClick = "click";
-    	nav.css({"display": "block"});
     	header.addClass('click');
+    	fas.removeClass('fa-bars').addClass('fa-times');
     } else {
     	isClick = "unclick";
-    	nav.css({"display": "none"});
     	header.removeClass('click');
+    	fas.removeClass('fa-times').addClass('fa-bars');
     }
 
     return isClick;
