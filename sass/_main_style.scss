@@ -213,6 +213,10 @@
 	left: -38px;
 }
 
+.services__link:hover {
+	color: #d9d9d9;
+}
+
 .services__number {
 	color: #ffffff;
 	margin-bottom: 46px;
@@ -593,11 +597,15 @@
 }
 
 .contact__article--email {
-	width: 142px;
+	width: 139px;
 	text-align: right;
 	background-image: url('../images/meil_footer.jpg');
 	background-repeat: no-repeat;
 	background-position: center left;
+}
+
+.contact__email {
+	color: $white;
 }
 
 
