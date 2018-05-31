@@ -1,3 +1,5 @@
+/* Hamburger menu */
+
 var navMenu = $('.navigation__menu');
 var isClick = "unclick";
 var header = $('.header');
@@ -17,6 +19,8 @@ navMenu.on('click', function(event) {
     return isClick;
 
 });
+
+/* Services animation */
 
 var servicesLink = $('.services__link');
 var servicesCells = $('.services__cells');
@@ -38,3 +42,13 @@ function setBackgroundImage() {
 	servicesCellTwo.css("background-image", "url(../images/serv_two.jpg)");
 	servicesCellfFour.css("background-image", "url(../images/serv_four.jpg)");
 };
+
+/* Smooth scrooling */
+
+ $('.side__link').click(function() {
+        var hash = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1500);
+        return false;
+});
