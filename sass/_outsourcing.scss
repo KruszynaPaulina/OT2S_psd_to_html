@@ -1,0 +1,25 @@
+/* Global for subpages */ 
+
+/* Header */
+
+.subpage-header {
+	height: 436px;
+	background-image: url(../images/line_oheader.jpg);
+}
+
+.subpage-header__hero {
+	display: flex;
+	border: 1px solid red;
+	height: calc(100% - 80px);
+	justify-content: center;
+	align-items: center;
+}
+
+.subpage-header__title {
+	font-size: 48px;
+	font-family: $font;
+	font-weight: 700;
+	color: $fontColor2;
+}
+
+/* Outsourcing */ 

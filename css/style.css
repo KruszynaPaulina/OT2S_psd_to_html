@@ -599,6 +599,29 @@ html, body {
 .contact__email {
   color: #ffffff; }
 
+/* Global for subpages */
+/* Header */
+.subpage-header {
+  height: 436px;
+  background-image: url(../images/line_oheader.jpg); }
+
+.subpage-header__hero {
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  height: calc(100% - 80px);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.subpage-header__title {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #27251f; }
+
+/* Outsourcing */
 /* RWD */
 @media (max-width: 1600px) {
   /* Header */

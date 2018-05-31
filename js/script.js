@@ -43,7 +43,7 @@ function setBackgroundImage() {
 	servicesCellfFour.css("background-image", "url(../images/serv_four.jpg)");
 };
 
-/* Smooth scrooling */
+/* Smooth scrolling */
 
  $('.side__link').click(function() {
         var hash = $(this).attr('href');
