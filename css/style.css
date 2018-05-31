@@ -608,7 +608,6 @@ html, body {
 .subpage-header__hero {
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
   height: calc(100% - 80px);
   -ms-flex-pack: center;
       justify-content: center;
@@ -622,6 +621,109 @@ html, body {
   color: #27251f; }
 
 /* Outsourcing */
+/* Kinds */
+.kinds {
+  width: 100%;
+  height: 850px;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.kinds__cell {
+  border: 1px solid red;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.kinds__cell--one {
+  background-image: url("../images/kinds_one.jpg"); }
+
+.kinds__cell--two {
+  background-image: url("../images/kinds_two.jpg"); }
+
+.kinds__cell--three {
+  background-image: url("../images/serv_three.jpg"); }
+
+.kinds__cell--four {
+  background-image: url("../images/serv_four.jpg"); }
+
+.kinds__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 53px;
+  margin-top: 425px; }
+  .kinds__subtitle::before {
+    content: '';
+    width: 147px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -19px;
+    left: 0; }
+
+.kinds__link {
+  color: #ffffff; }
+
+.kinds__link:hover {
+  color: #d9d9d9; }
+
+.kinds__acordion {
+  background-color: #22201b;
+  display: none;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 25%; }
+
+.acordion__subtitle {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  margin-top: 46px;
+  margin-bottom: 48px;
+  margin-left: 36px;
+  margin-right: 36px; }
+  .acordion__subtitle::before {
+    content: '';
+    width: 147px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -19px;
+    left: 0; }
+
+.acordion__article {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+  margin: 0 36px; }
+
+.acordion__article--one {
+  margin-bottom: 30px; }
+
+.acordion__article--two {
+  margin-top: 22px; }
+
+.acordion__item {
+  margin: 9px 0;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ffffff; }
+
+.acordion__list {
+  margin-left: 36px;
+  margin-right: 36px;
+  list-style-type: none; }
+
 /* RWD */
 @media (max-width: 1600px) {
   /* Header */

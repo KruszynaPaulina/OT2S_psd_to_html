@@ -45,10 +45,76 @@ function setBackgroundImage() {
 
 /* Smooth scrolling */
 
- $('.side__link').click(function() {
-        var hash = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 1500);
-        return false;
+$('.side__link').click(function() {
+    var hash = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 1500);
+    return false;
+});
+
+/* Acordion */ 
+
+
+var kindsLink = $('.kinds__link');
+var kindsAcordion = $('.kinds__acordion');
+var kindsCell = $('.kinds__cell');
+var kindsSubtitle = $('.kinds__subtitle')
+
+kindsLink.click(function(event) {
+
+	event.preventDefault();
+	kindsSubtitle.fadeOut();
+
+	var target = $(this);
+
+	var targetKindsCell = target.parent().parent();
+	var targetKindsCellSiblings = targetKindsCell.siblings().not(kindsAcordion);
+	var	targetAcordion = targetKindsCell.next()
+
+	targetKindsCell.animate({width: '0'}, "fast");
+	targetKindsCellSiblings.animate({
+        width: '33.33%'
+    }, "fast");
+
+	setTimeout(function(){ 
+		var targetWidth = targetKindsCell.width();
+
+		if (targetWidth === 0) {
+	    	targetKindsCell.css("display", "none");
+		    targetAcordion.css({
+		      "display": "flex",
+		      "width": "0%"
+		    });
+		    targetAcordion.animate({width: '50%'}, "fast");
+		    targetKindsCellSiblings.animate({width: '16.67%'}, "fast");
+    	}
+
+	}, 300);
+    
+});
+
+kindsAcordion.mouseleave(function(event) {
+
+	var target = $(this);
+
+	target.animate({width: '0'}, "fast");
+	target.siblings().not(kindsAcordion).animate({width: '33.33%'}, "fast");
+	target.prev().css({
+		      "display": "flex",
+		      "width": "0%"
+	});
+
+	setTimeout(function(){ 
+		var targetWidth = target.width();
+
+		if (targetWidth === 0) {
+	    	kindsCell.css("width", "25%");
+	    	kindsAcordion.css("display", "none");
+    	}
+
+	kindsSubtitle.fadeIn();
+
+	}, 300);
+
 });
