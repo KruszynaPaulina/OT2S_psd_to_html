@@ -630,7 +630,6 @@ html, body {
   overflow: hidden; }
 
 .kinds__cell {
-  border: 1px solid red;
   width: 25%;
   background-repeat: no-repeat;
   background-position: center;
@@ -779,7 +778,8 @@ html, body {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-color: #2a2823; }
 
 .check__text {
   font-size: 30px;
@@ -822,6 +822,56 @@ html, body {
   font-weight: 600;
   margin-left: 17px;
   margin-top: 225px; }
+
+/* Subpage-footer */
+.subpage-footer {
+  width: 100%;
+  height: 232px;
+  background-color: #27251f;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.subpage-footer__row {
+  display: -ms-flexbox;
+  display: flex; }
+
+.subpage-footer__container {
+  max-height: 140px; }
+
+.subpage-navigation__list {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.subpage-footer__cell--logo {
+  margin-right: 109px; }
+
+.subpage-footer__cell--navigation {
+  min-width: 785px; }
+
+.subpage-footer__cell--contact {
+  width: 45%; }
+
+.subpage-contact__article--phone {
+  background-image: url("../images/phone_sbfooter.jpg");
+  margin-bottom: 8px; }
+
+.subpage-contact__article--email {
+  background-image: url("../images/meil_sbfooter.jpg"); }
+
+.subpage-footer__row--two {
+  color: #ffffff;
+  font-size: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 48px; }
+
+.subpage-footer__article--design {
+  background-image: url("../images/zensite_sbfooter.jpg");
+  width: 245px; }
 
 /* RWD */
 @media (max-width: 1600px) {
