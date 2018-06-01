@@ -724,6 +724,49 @@ html, body {
   margin-right: 36px;
   list-style-type: none; }
 
+/* failures */
+.failures {
+  width: 100%;
+  height: 865px;
+  background-color: #f7f7f7;
+  background-image: url("../images/line_failures.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -ms-flexbox;
+  display: flex; }
+
+.failures__cell--one {
+  width: 33.33%; }
+
+.failures__cell--two {
+  width: 66.66%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.failures__title {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin-left: 171px;
+  max-width: 425px;
+  margin-top: 202px; }
+
+.failures__item {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  max-width: 930px; }
+
+.failures__list {
+  list-style-type: disc;
+  margin-left: 118px; }
+
+.failures__strong {
+  font-weight: 700; }
+
 /* RWD */
 @media (max-width: 1600px) {
   /* Header */
