@@ -33,6 +33,23 @@
 		display: none;
     }
 
+    /* Outsourcing */
+
+    /* Kinds */
+
+    .kinds__subtitle {
+    	font-size: 34px;
+    	margin-right: 20px;
+	}
+
+	.acordion__subtitle {
+		font-size: 34px;
+	}
+
+	.acordion__article, .acordion__item {
+    	font-size: 16px;
+	}
+
 }
 
 @media (max-width: 1400px) {
@@ -94,6 +111,22 @@
 		padding-top: 0;
 	}
 
+	/* Outsourcing */
+
+    /* Kinds */
+
+    .kinds__subtitle, .acordion__subtitle {
+    	font-size: 28px;
+	}
+
+	.kinds__subtitle {
+		margin-left: 30px;
+	}
+
+	.acordion__article, .acordion__item {
+    	font-size: 14px;
+	}
+
 }
 
 /* Large devices (desktops, 992px and less than 1200px) */
@@ -152,6 +185,19 @@
 	.date__cell--one, .care__cell--one {
 		min-width: 250px;
 	}
+
+	/* Outsourcing */
+
+    /* Kinds */
+
+    .kinds__subtitle, .acordion__subtitle {
+    	font-size: 26px;
+	}
+
+	.acordion__article, .acordion__item {
+    	font-size: 12px;
+	}
+
 
 }
 
@@ -236,6 +282,10 @@
 
 	.click .navigation__menu {
 		margin-right: 30px;
+	}
+
+	.click {
+		position: static;
 	}
 
 	/* Services */ 
@@ -356,6 +406,51 @@
     	height: 189px;
 	}
 
+	/* Outsourcing */
+
+	/* Header */
+
+	.subpage-header__hero {
+    	height: calc(100% - 114px);
+    }
+
+    /* Kinds */
+
+    .kinds {
+    	flex-wrap: wrap;
+    }
+
+    .kinds__cell {
+    	width: 100%;
+    	height: 25%;
+    	background-position: center right;
+   		background-size: 50%;
+   		display: flex;
+   		align-items: center;
+    }
+
+    .kinds__subtitle {
+    	margin: 25px 0 0 30px;
+    }
+
+    .kinds__acordion {
+    	width: 100%;
+    	position: relative;
+    }
+
+    .acordion__subtitle {
+		display: none;
+    }
+
+    .kinds__btn {
+    	display: block;
+    	color: $white;
+    	font-size: 20px;
+    	position: absolute;
+    	top: 30px;
+    	right: 40px;
+    }
+
 /* Focus */ 	
 
 }
@@ -426,6 +521,14 @@
 
 	.care__subtitle {
     	font-size: 30px;
+	}
+
+	/* Outsourcing */
+
+	/* Kind */ 
+
+	.kinds__subtitle {
+    	font-size: 21px;
 	}
 
 }
@@ -526,6 +629,29 @@
     	height: 340px;
 	}
 
+	/* Outsourcing */
+
+	/* Header */
+
+	.subpage-header__title {
+    	font-size: 40px;
+	}
+
+	/* Outsourcing */
+
+	/* Kind */ 
+
+	.kinds__cell {
+    	background-position: center;
+    	background-size: cover;
+	}
+
+	.kinds__btn {
+    	top: 20px;
+    	right: 20px;
+	}
+
+
 }
 
 @media (max-width: 500px) {
@@ -534,6 +660,14 @@
 
 	.care__strong {
     	max-width: 102px;
+	}
+
+	/* Outsourcing */
+
+	/* Kind */ 
+
+	.acordion__article, .acordion__item {
+    	font-size: 10px;
 	}
 }
 
@@ -688,5 +822,19 @@
 
     .care__strong {
     	max-width: 190px;
+	}
+
+	/* Outsourcing */
+
+	/* Header */
+
+	.subpage-header__title {
+    	font-size: 32px;
+	}
+
+	/* Kind */ 
+
+	.acordion__article, .acordion__item {
+    	line-height: 14px;
 	}
 }

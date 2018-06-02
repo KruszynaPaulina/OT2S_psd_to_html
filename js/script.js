@@ -55,54 +55,60 @@ $('.side__link').click(function() {
 
 /* Acordion */ 
 
-
 var kindsLink = $('.kinds__link');
 var kindsAcordion = $('.kinds__acordion');
 var kindsCell = $('.kinds__cell');
 var kindsSubtitle = $('.kinds__subtitle')
 
-kindsLink.click(function(event) {
-
-	event.preventDefault();
-	kindsSubtitle.fadeOut();
-
-	var target = $(this);
-
-	var targetKindsCell = target.parent().parent();
-	var targetKindsCellSiblings = targetKindsCell.siblings().not(kindsAcordion);
-	var	targetAcordion = targetKindsCell.next()
-
-	targetKindsCell.animate({width: '0'}, "fast");
-	targetKindsCellSiblings.animate({
-        width: '33.33%'
-    }, "fast");
-
-	setTimeout(function(){ 
-		var targetWidth = targetKindsCell.width();
-
-		if (targetWidth === 0) {
-	    	targetKindsCell.css("display", "none");
-		    targetAcordion.css({
-		      "display": "flex",
-		      "width": "0%"
-		    });
-		    targetAcordion.animate({width: '50%'}, "fast");
-		    targetKindsCellSiblings.animate({width: '16.67%'}, "fast");
-    	}
-
-	}, 300);
-    
+$( window ).resize(function() {
+  location.reload(true);
 });
 
-kindsAcordion.mouseleave(function(event) {
+if($(window).width() >= 992) {
+
+	kindsLink.click(function(event) {
+
+		event.preventDefault();
+		kindsSubtitle.fadeOut();
+
+		var target = $(this);
+
+		var targetKindsCell = target.parent().parent();
+		var targetKindsCellSiblings = targetKindsCell.siblings().not(kindsAcordion);
+		var	targetAcordion = targetKindsCell.next()
+
+		targetKindsCell.animate({width: '0'}, "fast");
+		targetKindsCellSiblings.animate({
+	        width: '33.33%'
+	    }, "fast");
+
+		setTimeout(function(){ 
+			var targetWidth = targetKindsCell.width();
+
+			if (targetWidth === 0) {
+		    	targetKindsCell.css("display", "none");
+			    targetAcordion.css({
+			      "display": "flex",
+			      "width": "0%"
+			    });
+			    targetAcordion.animate({width: '50%'}, "fast");
+			    targetKindsCellSiblings.animate({width: '16.67%'}, "fast");
+	    	}
+
+		}, 300);
+	    
+	});
+
+
+	kindsAcordion.mouseleave(function(event) {
 
 	var target = $(this);
 
 	target.animate({width: '0'}, "fast");
 	target.siblings().not(kindsAcordion).animate({width: '33.33%'}, "fast");
 	target.prev().css({
-		      "display": "flex",
-		      "width": "0%"
+		"display": "flex",
+		"width": "0%"
 	});
 
 	setTimeout(function(){ 
@@ -117,4 +123,56 @@ kindsAcordion.mouseleave(function(event) {
 
 	}, 300);
 
-});
+	});
+
+} else {
+
+	var mobIsClick = 'unclick';
+
+	$('.kinds__link, .kinds__btn').click(function(event) {
+
+		event.preventDefault();
+
+		if(mobIsClick === 'unclick') {
+
+			var target = $(this);
+			var targetKindsCell = target.parent().parent();
+			var targetKindsCellSiblings = targetKindsCell.siblings().not(kindsAcordion);
+			var	targetAcordion = targetKindsCell.next()
+			var targetKindsCellSiblingsChildren = targetKindsCellSiblings.children()
+
+			targetKindsCellSiblings.animate({height: '0'}, "slow");
+			targetKindsCellSiblingsChildren.fadeOut('fast');
+			targetAcordion.css({
+				"display": "flex",
+				"height": "0%"
+			});
+			targetAcordion.animate({height: '75%'}, "slow");
+
+			mobIsClick = 'click';
+
+		} else {
+
+			event.preventDefault();
+			kindsAcordion.animate({height: '0'}, "slow");
+
+			kindsCell.animate({height: '25%'}, "slow").css("display", "flex");
+			kindsSubtitle.fadeIn('slow');
+
+			setTimeout(function(){ 
+
+				kindsAcordion.css("display", "none");
+
+			}, 550);
+
+			return mobIsClick = 'unclick';
+		}
+
+	});
+
+};
+
+
+	
+
+
