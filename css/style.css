@@ -942,11 +942,6 @@ html, body {
   .footer__cell--copyright {
     width: 50%; }
 
-  .footer__cell--navigation {
-    width: 100%;
-    -ms-flex-order: 3;
-        order: 3; }
-
   .footer__cell--contact {
     width: 50%; }
 
@@ -970,7 +965,36 @@ html, body {
 
   /* Check */
   .check {
-    padding: 0 120px; } }
+    padding: 0 120px; }
+
+  /* Subpage-footer */
+  .subpage-footer__cell--navigation {
+    width: 100%;
+    -ms-flex-order: 3;
+        order: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    min-width: 200px; }
+
+  .subpage-footer__cell--logo {
+    width: 50%;
+    margin-right: 0; }
+
+  .subpage-footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .subpage-footer__cell--contact {
+    -ms-flex-order: 2;
+        order: 2; }
+
+  .subpage-footer__row--two {
+    margin-top: 20px; }
+
+  .subpage-footer {
+    height: 300px; } }
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
   /* Header */
@@ -1290,6 +1314,34 @@ html, body {
     max-width: 300px;
     margin-top: 30px; }
 
+  /* Subpage-footer */
+  .subpage-footer__cell--logo {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+
+  .subpage-contact__article--phone {
+    margin-bottom: 10px; }
+
+  .subpage-footer__cell--logo {
+    margin-bottom: 25px; }
+
+  .subpage-footer__row--two {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .subpage-footer__article--copyright {
+    width: 100%;
+    text-align: center; }
+
+  .subpage-footer__container {
+    max-height: 300px; }
+
+  .subpage-footer {
+    height: 400px; }
+
   /* Focus */ }
 /* Small devices (landscape phones, 576px and less than 768) */
 @media (max-width: 768px) {
@@ -1461,7 +1513,15 @@ html, body {
 
   /* Check */
   .check__text {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  /* Subpage-footer */
+  .subpage-footer__container {
+    max-height: 350px; }
+
+  .subpage-footer__cell--navigation {
+    text-align: center;
+    margin-bottom: 20px; } }
 @media (max-width: 500px) {
   /* Care */
   .care__strong {
@@ -1634,4 +1694,12 @@ html, body {
     max-height: 974px; }
 
   .failures__list {
-    margin-left: 45px; } }
+    margin-left: 45px; }
+
+  /* Subpage-footer */
+  .subpage-footer__article--copyright {
+    font-size: 12px; }
+
+  .subpage-footer__article--design {
+    font-size: 12px;
+    width: 215px; } }
