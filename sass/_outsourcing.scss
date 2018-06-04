@@ -161,12 +161,14 @@
 
 .failures__cell--one {
 	width: 33.33%;
+	min-width: 470px;
 }
 
 .failures__cell--two {
 	width: 66.66%;
 	display: flex;
 	align-items: center;
+	padding: 30px 30px 30px 0;
 }
 
 .failures__title {
@@ -175,6 +177,7 @@
 	font-weight: 200;
 	margin-left: 171px;
 	max-width: 425px;
+	width: 33.33%;
 	margin-top: 202px;
 }
 

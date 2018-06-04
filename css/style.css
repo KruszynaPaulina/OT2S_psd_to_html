@@ -735,14 +735,16 @@ html, body {
   display: flex; }
 
 .failures__cell--one {
-  width: 33.33%; }
+  width: 33.33%;
+  min-width: 470px; }
 
 .failures__cell--two {
   width: 66.66%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding: 30px 30px 30px 0; }
 
 .failures__title {
   font-size: 48px;
@@ -750,6 +752,7 @@ html, body {
   font-weight: 200;
   margin-left: 171px;
   max-width: 425px;
+  width: 33.33%;
   margin-top: 202px; }
 
 .failures__item {
@@ -963,7 +966,11 @@ html, body {
     margin-left: 30px; }
 
   .acordion__article, .acordion__item {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  /* Check */
+  .check {
+    padding: 0 120px; } }
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
   /* Header */
@@ -1010,7 +1017,17 @@ html, body {
     font-size: 26px; }
 
   .acordion__article, .acordion__item {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  /* failures */
+  .failures {
+    background-image: none; }
+
+  .failures__title {
+    margin-left: 30px; }
+
+  .failures__cell--one {
+    min-width: 250px; } }
 /* Hover */
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
@@ -1212,6 +1229,29 @@ html, body {
     top: 30px;
     right: 40px; }
 
+  /* failures */
+  .failures {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 740px; }
+
+  .failures__cell--one {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 100px; }
+
+  .failures__cell--two {
+    width: 100%;
+    padding-bottom: 100px; }
+
+  .failures__title {
+    margin: 0; }
+
   /* Focus */ }
 /* Small devices (landscape phones, 576px and less than 768) */
 @media (max-width: 768px) {
@@ -1266,7 +1306,17 @@ html, body {
   /* Outsourcing */
   /* Kind */
   .kinds__subtitle {
-    font-size: 21px; } }
+    font-size: 21px; }
+
+  /* failures */
+  .failures__title {
+    font-size: 45px; }
+
+  .failures__item {
+    font-size: 22px; }
+
+  .failures__list {
+    margin-left: 80px; } }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   /* Header */
@@ -1352,7 +1402,20 @@ html, body {
 
   .kinds__btn {
     top: 20px;
-    right: 20px; } }
+    right: 20px; }
+
+  /* failures */
+  .failures {
+    max-height: 500px; }
+
+  .failures__title {
+    font-size: 35px; }
+
+  .failures__item {
+    font-size: 18px; }
+
+  .failures__cell--one {
+    padding: 100px 30px 0 30px; } }
 @media (max-width: 500px) {
   /* Care */
   .care__strong {
@@ -1361,7 +1424,14 @@ html, body {
   /* Outsourcing */
   /* Kind */
   .acordion__article, .acordion__item {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  /* failures */
+  .failures__title {
+    font-size: 30px; }
+
+  .failures__item {
+    font-size: 16px; } }
 @media (max-width: 450px) {
   /* Header */
   .hero__title {
@@ -1505,4 +1575,17 @@ html, body {
 
   /* Kind */
   .acordion__article, .acordion__item {
-    line-height: 14px; } }
+    line-height: 14px; }
+
+  /* failures */
+  .failures__title {
+    font-size: 25px; }
+
+  .failures__item {
+    font-size: 14px; }
+
+  .failures {
+    max-height: 974px; }
+
+  .failures__list {
+    margin-left: 45px; } }
