@@ -1,0 +1,130 @@
+/* Kontakt */
+
+.con {
+	height: 813px;
+	width: 100%;
+	background-image: url('../images/line_contact.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+} 
+
+.con__cell--address {
+	padding-left: 186px;
+}
+
+.con__title {
+	font-size: 48px;
+	font-family: $font;
+	font-weight: 200;
+	color: $white;
+	margin-top: 140px;
+	margin-bottom: 90px;
+}
+
+.con__article {
+	font-size: 24px;
+	font-family: $font;
+	font-weight: 300;
+	color: $white;
+}
+
+.con__cell--address {
+	width: 41.67%;
+}
+
+.con__cell--form {
+	width: 58.33%;
+	padding: 0 15px;
+}
+
+.con__article--phone {
+	background-image: url('../images/phone.png');
+	background-size: 27px 27px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	margin-bottom: 18px;
+	height: 27px;
+}
+
+.con__article--email {
+	background-image: url('../images/email.png');
+	background-size: 27px 18px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 45px;
+	margin-bottom: 18px;
+}
+
+.con__article--address {
+	background-image: url('../images/address_contact.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 45px;
+}
+
+.con__email {
+	color: $white;
+}
+
+.con__imput {
+	margin: 0 15px;
+	background-color: transparent;
+	width: 450px;
+	border: none;
+	border-bottom: 2px solid #646464;
+	color: $white;
+  	font-size: 24px;
+	font-family: $font;
+	font-weight: 300;
+	padding: 6px 10px;
+	margin-bottom: 26px;
+}
+
+.con__imput:focus, .con__textarea:focus {
+	outline: 2px solid #646464;
+}
+
+.con__imput::placeholder, .con__textarea::placeholder {
+  	color: $white;
+}
+
+.con__textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #646464;
+	color: $white;
+  	font-size: 24px;
+	font-family: $font;
+	font-weight: 300;
+	padding: 6px 10px;
+	margin: 0 15px;
+	resize: none;
+	width: 930px;
+	margin-top: 84px;
+}
+
+.con__btn {
+	text-transform: uppercase;
+	color: $white;
+	font-size: 24px;
+	font-family: $font;
+	font-weight: 300;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	background-image: url('../images/arrow.jpg');
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 820px;
+}
+
+.con__form {
+	height: 420px;
+	position: relative;
+	margin-top: 250px;
+}

@@ -1,5 +1,56 @@
 /* Global for subpages */ 
 
+.subpage {
+	width: 100%;
+	height: 865px;
+	background-color: #2a2823;
+	min-height: 977px;
+    background-image: url(../images/line_check.jpg);
+    background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 150px;
+	text-align: right;
+}
+
+.subpage__article {
+	color: $white;
+	font-size: 30px;
+    line-height: 36px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.subpage__strong {
+	font-weight: 700;
+}
+
+.subpage__list {
+	margin-top: 30px;
+	list-style-type: disc;
+	color: $white;
+	text-align: left;
+}
+
+.subpage__link {
+	color: $white;
+	font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.subpage__link:hover {
+	text-decoration: underline;
+}
+
+.subpage__item {
+	margin: 20px 0;
+}
+
 /* Header */
 
 .subpage-header {
@@ -293,12 +344,14 @@
 }
 
 .subpage-contact__article--phone {
-	background-image: url('../images/phone_sbfooter.jpg');
+	background-image: url('../images/phone.png');
+	background-size: 25px 25px;
 	margin-bottom: 8px;
 }
 
 .subpage-contact__article--email {
-	background-image: url('../images/meil_sbfooter.jpg');
+	background-image: url('../images/email.png');
+	background-size: 25px 18px;
 }
 
 .subpage-footer__row--two {
@@ -310,6 +363,10 @@
 }
 
 .subpage-footer__article--design {
-	background-image: url('../images/zensite_sbfooter.jpg');
+	background-image: url('../images/logo_zensite.png');
+	background-size: 92px 28px;
 	width: 245px;
 }
+
+
+
