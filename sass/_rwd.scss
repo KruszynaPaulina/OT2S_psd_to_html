@@ -50,6 +50,20 @@
     	font-size: 16px;
 	}
 
+	/* Contact */
+
+	.con__imput {
+    	width: 45%;
+	}
+
+	.con__textarea {
+		width: 95%;
+	}
+
+	.con__btn {
+		margin-right: 3%;
+	}
+
 }
 
 @media (max-width: 1400px) {
@@ -160,6 +174,12 @@
 
 	.subpage-footer {
 	    height: 300px;
+	}
+
+	/* Contact */ 
+
+	.con__cell--address {
+	    padding-left: 130px;
 	}
 
 }
@@ -275,6 +295,32 @@
 
     .subpage {
     	background-image: none;
+    }
+
+    /* Contact */
+
+    .con {
+	    background-image: none;
+	}
+
+	.con__cell--address {
+	    padding-left: 30px;
+	}
+
+	.con__imput {
+    	width: 95%;
+	}
+
+	.con__textarea {
+		margin-top: 35px;
+	}
+
+	.con__box {
+    	margin-top: 80px;
+    }
+
+    .con__form {
+    	height: 480px; 
     }
 
 }
@@ -614,6 +660,44 @@
 	    text-align: center;
 	}
 
+	/* Contect */ 
+
+	.con {
+		flex-wrap: wrap;
+	}
+
+	.con__cell--address {
+		width: 100%;
+		padding-right: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 100px;
+	}
+
+	.con__title {
+    	margin-top: 0;
+    	text-align: center;
+	}
+
+	.con__cell--form {
+		width: 100%;
+	}
+
+	.con__form {
+		margin: 100px 15px;
+	}
+
+	.con__imput, .con__textarea {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.con__btn {
+    	margin-right: 0;
+	}
+
 /* Focus */ 	
 
 }
@@ -713,6 +797,17 @@
 	.check__cell {
     	margin: 30px;
 	}
+
+	/* Contact */ 
+
+	.con__title {
+    	font-size: 45px;
+	}
+
+	.con__article, .con__imput, .con__textarea, .con__btn {
+	    font-size: 22px; 
+	}
+
 
 }
 
@@ -867,6 +962,16 @@
 	.subpage-footer__cell--navigation {
 		text-align: center;
 		margin-bottom: 20px;
+	}
+
+	/* Contact */ 
+
+	.con__title {
+    	font-size: 35px;
+	}
+
+	.con__article, .con__imput, .con__textarea, .con__btn {
+    font-size: 18px;
 	}
 
 }
@@ -1106,5 +1211,28 @@
 
 	.subpage__link {
     	font-size: 20px;
+	}
+
+	/* Contact */ 
+
+	.con__title {
+    	font-size: 25px;
+	}
+
+	.con__article, .con__imput, .con__textarea, .con__btn {
+	    font-size: 14px;
+	}
+
+	.con__article--phone {
+    	background-size: 22px 22px;
+    	height: 22px;
+	}
+
+	.con__article--email {
+    	background-size: 22px 14px;
+	}
+
+	.con__article--address {
+		background-size: 22px 28px;
 	}
 }
