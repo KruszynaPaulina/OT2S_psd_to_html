@@ -1058,6 +1058,13 @@ html, body {
       justify-content: flex-end;
   margin-top: 155px; }
 
+.lacation {
+  height: 580px;
+  width: 100%; }
+
+.location__map {
+  height: 100%; }
+
 /* RWD */
 @media (max-width: 1600px) {
   /* Header */

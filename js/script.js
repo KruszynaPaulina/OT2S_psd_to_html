@@ -150,6 +150,61 @@ if($(window).width() >= 992) {
 };
 
 
-	
+
+
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: {lat: 50.06271123857081, lng: 19.938942275116233},
+    disableDefaultUI: true,
+    styles: [
+    {
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "gamma": 0.8
+            },
+            {
+                "lightness": 4
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#5dff00"
+            },
+            {
+                "gamma": 4.97
+            },
+            {
+                "lightness": -5
+            },
+            {
+                "saturation": 100
+            }
+        ]
+    }
+]
+  });
+
+  var image = '../images/marker.png';
+  var beachMarker = new google.maps.Marker({
+    position: {lat: 50.06271123857081, lng: 19.938942275116233},
+    map: map,
+    icon: image,
+    title: 'OT2S'
+  });
+}
 
 
