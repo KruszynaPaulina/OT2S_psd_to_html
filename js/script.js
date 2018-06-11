@@ -149,9 +149,7 @@ if($(window).width() >= 992) {
 
 };
 
-
-
-
+/* Map */
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -207,4 +205,33 @@ function initMap() {
   });
 }
 
+/* Counter */
+
+$(window).scroll(function() {
+	
+	var dateTop = $('#date').offset().top - window.innerHeight;
+	var counter = $('.counter');
+	if (counter.text() == 0 && $(window).scrollTop() > dateTop) {
+		counter.each(function() {
+			var $this = $(this),
+			countTo = $this.attr('data-count');
+			var count = 0;
+			var interval = setInterval(function(){
+				count ++;
+				
+				if (countTo == 95) {
+					$this.text(count + "%");
+				} else {
+					$this.text(count);
+				}
+				if ($this.text() == countTo) {
+					clearInterval(interval);
+				} else if ($this.text() == countTo +"%") { 
+					clearInterval(interval);
+				}
+			}, 100)
+		})
+	};
+
+});
 
