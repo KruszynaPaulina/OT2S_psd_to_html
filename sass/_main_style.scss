@@ -30,10 +30,6 @@
 	color: $fontColor;
 }
 
-.nav__link:hover {
-	font-weight: 800;
-}
-
 .nav__item {
 	text-align: center;
 	margin: 0 23px;
@@ -130,10 +126,6 @@
 	left: -31px;
 }
 
-.side__link:hover {
-	font-weight: 800;
-}
-
 /* Services */ 
 
 .services {
@@ -207,10 +199,6 @@
 	color: #ffffff;
 	bottom: -67px;
 	left: -38px;
-}
-
-.services__link:hover {
-	color: #d9d9d9;
 }
 
 .services__number {
@@ -561,10 +549,6 @@
 	font-size: 18px;
 	font-family: $font;
 	font-family: 600;
-}
-
-.navigation__link:hover {
-	text-decoration: underline;
 }
 
 .navigation__item {

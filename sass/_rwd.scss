@@ -328,6 +328,24 @@
 /* Hover */ 
 @media (min-width: 992px) {
 
+	/* Header */
+
+	.nav__link:hover, .side__link:hover {
+		font-weight: 800;
+	}
+
+	/* Services, kinds*/ 
+
+	.services__link:hover, .kinds__link:hover {
+		color: #d9d9d9;
+	}
+
+	/* Navigation */ 
+
+	.navigation__link:hover, .subpage__link:hover {
+		text-decoration: underline;
+	}
+
 }
 
 /* Medium devices (tablets, 768px and less than 992) */
@@ -698,7 +716,25 @@
     	margin-right: 0;
 	}
 
-/* Focus */ 	
+/* Focus */ 
+
+	/* Header */
+
+	.nav__link:focus, .side__link:focus {
+		font-weight: 800;
+	}	
+
+	/* Services, kinds*/ 
+
+	.services__link:focus, .kinds__link:focus {
+		color: #d9d9d9;
+	}
+
+	/* Navigation */ 
+
+	.navigation__link:focus, .subpage__link:focus {
+		text-decoration: underline;
+	}
 
 }
 

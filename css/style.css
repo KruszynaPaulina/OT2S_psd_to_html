@@ -98,9 +98,6 @@ html, body {
   font-size: 18px;
   color: #0a0907; }
 
-.nav__link:hover {
-  font-weight: 800; }
-
 .nav__item {
   text-align: center;
   margin: 0 23px; }
@@ -182,9 +179,6 @@ html, body {
   bottom: -72px;
   left: -31px; }
 
-.side__link:hover {
-  font-weight: 800; }
-
 /* Services */
 .services {
   height: 849px;
@@ -249,9 +243,6 @@ html, body {
   color: #ffffff;
   bottom: -67px;
   left: -38px; }
-
-.services__link:hover {
-  color: #d9d9d9; }
 
 .services__number {
   color: #ffffff;
@@ -559,9 +550,6 @@ html, body {
   font-family: "Raleway", sans-serif;
   font-family: 600; }
 
-.navigation__link:hover {
-  text-decoration: underline; }
-
 .navigation__item {
   margin: 0 23px; }
 
@@ -642,9 +630,6 @@ html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
-.subpage__link:hover {
-  text-decoration: underline; }
-
 .subpage__item {
   margin: 20px 0; }
 
@@ -716,9 +701,6 @@ html, body {
 
 .kinds__link {
   color: #ffffff; }
-
-.kinds__link:hover {
-  color: #d9d9d9; }
 
 .kinds__acordion {
   background-color: #22201b;
@@ -910,7 +892,8 @@ html, body {
 .subpage-contact__article--phone {
   background-image: url("../images/phone.png");
   background-size: 25px 25px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  height: 25px; }
 
 .subpage-contact__article--email {
   background-image: url("../images/email.png");
@@ -1302,6 +1285,18 @@ html, body {
   .con__form {
     height: 480px; } }
 /* Hover */
+@media (min-width: 992px) {
+  /* Header */
+  .nav__link:hover, .side__link:hover {
+    font-weight: 800; }
+
+  /* Services, kinds*/
+  .services__link:hover, .kinds__link:hover {
+    color: #d9d9d9; }
+
+  /* Navigation */
+  .navigation__link:hover, .subpage__link:hover {
+    text-decoration: underline; } }
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
   /* Header */
@@ -1609,7 +1604,18 @@ html, body {
   .con__btn {
     margin-right: 0; }
 
-  /* Focus */ }
+  /* Focus */
+  /* Header */
+  .nav__link:focus, .side__link:focus {
+    font-weight: 800; }
+
+  /* Services, kinds*/
+  .services__link:focus, .kinds__link:focus {
+    color: #d9d9d9; }
+
+  /* Navigation */
+  .navigation__link:focus, .subpage__link:focus {
+    text-decoration: underline; } }
 /* Small devices (landscape phones, 576px and less than 768) */
 @media (max-width: 768px) {
   /* Header */

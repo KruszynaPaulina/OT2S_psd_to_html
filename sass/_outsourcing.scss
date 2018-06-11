@@ -43,10 +43,6 @@
     font-weight: 400;
 }
 
-.subpage__link:hover {
-	text-decoration: underline;
-}
-
 .subpage__item {
 	margin: 20px 0;
 }
@@ -131,10 +127,6 @@
 
 .kinds__link {
 	color: $white;
-}
-
-.kinds__link:hover {
-	color: #d9d9d9;
 }
 
 .kinds__acordion {
@@ -347,6 +339,7 @@
 	background-image: url('../images/phone.png');
 	background-size: 25px 25px;
 	margin-bottom: 8px;
+	height: 25px;
 }
 
 .subpage-contact__article--email {
