@@ -151,6 +151,10 @@ $(function(){
 
 	};
 
+
+
+});
+
 	/* Map */
 
 	function initMap() {
@@ -206,6 +210,3 @@ $(function(){
 	    title: 'OT2S'
 	  });
 	}
-
-});
-
